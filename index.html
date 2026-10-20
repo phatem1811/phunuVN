@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ngày Phụ Nữ Việt Nam 20/10 💐</title>
+    <meta
+      name="description"
+      content="Thiệp chúc mừng Ngày Phụ Nữ Việt Nam 20/10 — mở phong bì để xem lời chúc."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ====== NỀN MỜ ====== -->
+    <div class="bg-blur" aria-hidden="true"></div>
+    <div class="bg-veil" aria-hidden="true"></div>
+
+    <!-- ====== NỀN + CANH HOA ====== -->
+    <div class="scene" id="scene">
+      <div class="scene__glow"></div>
+      <div class="petals" id="petals" aria-hidden="true"></div>
+
+      <!-- ====== PHONG BÌ ====== -->
+      <div class="envelope" id="envelope">
+        <div class="envelope__shadow"></div>
+
+        <div class="envelope__letter" aria-hidden="true">
+          <span class="envelope__letter-line"></span>
+          <span class="envelope__letter-line"></span>
+          <span class="envelope__letter-line short"></span>
+        </div>
+
+        <button
+          class="envelope__flap"
+          id="openBtn"
+          type="button"
+          aria-label="Mở phong bì"
+        >
+          <span class="envelope__flap-inner"></span>
+        </button>
+
+        <div class="envelope__back"></div>
+
+        <div class="envelope__front">
+          <p class="envelope__to">Gửi người phụ nữ thật đẹp</p>
+        </div>
+
+        <button
+          class="envelope__seal"
+          id="sealBtn"
+          type="button"
+          aria-label="Mở thiệp"
+        >
+          <span class="envelope__seal-text">20<em>/</em>10</span>
+          <span class="envelope__seal-ring"></span>
+        </button>
+
+        <span class="envelope__cta-wrap">
+          <button class="envelope__cta" id="openCardBtn" type="button">
+            <span class="envelope__cta-icon" aria-hidden="true">💌</span>
+            Mở thiệp
+          </button>
+        </span>
+      </div>
+
+      <!-- ====== THIỆP CHÚC MỪNG ====== -->
+      <article class="letter" id="letter" aria-hidden="true">
+        <div class="letter__inner">
+          <div class="letter__corner letter__corner--tl" aria-hidden="true">
+            ❀
+          </div>
+          <div class="letter__corner letter__corner--br" aria-hidden="true">
+            ❀
+          </div>
+
+          <p class="letter__kicker fade">Ngày Phụ Nữ Việt Nam</p>
+
+          <img
+            class="letter__mascot fade"
+            src="mocha.gif"
+            alt="Mochi chúc hạnh phúc"
+            width="200"
+            height="176"
+          />
+
+          <h1 class="letter__date fade">
+            <span class="letter__day">20</span>
+            <span class="letter__slash">/</span>
+            <span class="letter__month">10</span>
+          </h1>
+
+          <div class="letter__rule fade">
+            <span></span><i>❁</i><span></span>
+          </div>
+
+          <p class="letter__hello fade">Gửi những người phụ nữ thật đẹp,</p>
+
+          <p class="letter__body fade">
+            Nhân ngày <strong>20 tháng 10</strong> — ngày của những người phụ nữ
+            dịu dàng nhưng bền bỉ, những người mẹ, người chị, người em luôn ấm
+            áp và hy sinh thầm lặng. Cầu mong bạn luôn mạnh khỏe, an nhiên, được
+            yêu thương và luôn nở cười dù đời có nhiều mưa.
+          </p>
+
+          <blockquote class="letter__quote fade">
+            “Mỗi ngày là một cơ hội để người phụ nữ<br />
+            được yêu thương và trở nên đẹp hơn trong ngày.”
+          </blockquote>
+
+          <p class="letter__wish fade">
+            Chúc bạn một ngày 20/10 thật nhiều niềm vui,<br />thật nhiều nụ cười
+            và thật nhiều điều bất ngờ dịu dàng.
+          </p>
+
+          <p class="letter__sign fade">Trân trọng chúc mừng 💐</p>
+
+          <div class="letter__actions fade">
+            <button class="btn btn--primary" id="confettiBtn" type="button">
+              🎉 Gửi lời chúc
+            </button>
+            <button class="btn btn--ghost" id="replayBtn" type="button">
+              ↺ Mở lại phong bì
+            </button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
