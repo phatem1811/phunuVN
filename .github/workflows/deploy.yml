@@ -31,6 +31,9 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+        with:
+          # Tu bat Pages neu repo chua bat (fix loi 404 "Get Pages site failed")
+          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
